@@ -16,7 +16,64 @@
     margin-top: 10em;
 }
 
+/* Lightbox: */
 
+#mask {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+    place-items: center;
+}
+
+#lightbox {
+    grid-area: 1/1/2/-1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    z-index: 3;
+    order: 3;
+}
+
+#arrows {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    display: flex;
+    font-size: 1.2rem;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+#caption {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1em 2em;
+    width: 100%;
+    color: #FFF;
+    order: 2;
+    display: unset;
+    grid-row: 2/2;
+    text-align: center;
+}
+
+#next,
+#prev,
+#close {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    order: 5;
+    padding: 0.6rem 0.8rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#close {
+    justify-self: flex-end;
+    align-self: flex-start;
+}
 
 
 figure {
@@ -37,7 +94,7 @@ figure figcaption {
     grid-column: 1/-1;
     order: 1;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font-weight: 400;
     display: none;
@@ -86,7 +143,7 @@ figure:hover figcaption {
     }
 
     figure figcaption {
-        background-color: rgba(0, 0, 0, 0.7);
+        /* background-color: rgba(0, 0, 0, 0.8); */
         text-align: center;
         display: unset;
     }

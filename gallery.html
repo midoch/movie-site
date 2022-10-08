@@ -9,32 +9,58 @@
     <script
       src="https://kit.fontawesome.com/9b9822eb3f.js"
       crossorigin="anonymous"></script>
+    <script defer src="lightbox.js"></script>
     <title>Gallery</title>
   </head>
   <body>
+    <!--Light Box-->
+    <div id="mask">
+      <figure id="lightbox">
+        <i id="close" class="fa-solid fa-xmark"></i>
+        <img id="bigImg" src="/images/small-img/thumb-1.jpg" alt="image" />
+        <div id="arrows">
+          <i id="prev" class="fa-solid fa-arrow-left"></i>
+          <i id="next" class="fa-solid fa-arrow-right"></i>
+        </div>
+        <figcaption id="caption">Thumb</figcaption>
+      </figure>
+    </div>
+    <!--Light Box-->
+
     <div id="wrapper">
       <header>
-        <nav class="center_items nav-text">
-          <ul>
+        <nav>
+          <div id="burger"><i class="fa-solid fa-bars"></i></div>
+          <ul class="menu-items">
             <li><a href="./index.html">Home</a></li>
             <li><a class="active" href="./gallery.html">Gallery</a></li>
             <li><a href="./synopsis.html">Synopsis</a></li>
             <li><a href="./cast.html">Cast</a></li>
-            <li class="icons">
+          </ul>
+          <!-- menu-items -->
+          <ul class="some">
+            <li>
               <a target="_blank" href="https://twitter.com/"
                 ><i class="fa-brands fa-square-twitter"></i
               ></a>
+            </li>
+            <li>
               <a target="_blank" href="https://www.facebook.com/"
                 ><i class="fa-brands fa-square-facebook"></i
               ></a>
+            </li>
+            <li>
               <a target="_blank" href="https://www.linkedin.com/"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
+            </li>
+            <li>
               <a target="_blank" href="https://www.instagram.com/"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
             </li>
           </ul>
+          <!-- some -->
         </nav>
       </header>
       <main id="gallery">
@@ -57,52 +83,57 @@
             src="/work-place/parasite-imgs/parasite_logo-presentation.png"
             alt="parasite logo" />
         </div>
+
         <div class="gallery">
           <!-- grid -->
           <figure>
-            <img src="/images/small-img/thumb-1.jpg" alt="thumb-1" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-1.jpg" alt="Family foto" />
+            <figcaption>Family foto</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-2.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-2.jpg" alt="Brother & Sister" />
+            <figcaption>Brother & Sister</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-2.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-2.jpg" alt="Brother & Sister" />
+            <figcaption>Brother & Sister</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-3.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-3.jpg" alt="Women scared" />
+            <figcaption>Women scared</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-4.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-4.jpg" alt="Opening a package" />
+            <figcaption>Opening a package</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-5.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-5.jpg" alt="Chilling" />
+            <figcaption>Chilling</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-6.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-6.jpg" alt="Family meeting" />
+            <figcaption>Family meeting</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-7.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img src="/images/small-img/thumb-7.jpg" alt="WC selfie" />
+            <figcaption>WC selfie</figcaption>
           </figure>
           <figure>
-            <img src="/images/small-img/thumb-8.jpg" alt="thumb-2" />
-            <figcaption>billedetekst</figcaption>
+            <img
+              src="/images/small-img/thumb-8.jpg"
+              alt="Man looking outside the prison" />
+            <figcaption>Man looking outside the prison</figcaption>
           </figure>
         </div>
       </main>
 
       <!--Footer-->
-
       <footer>
-        <img class="logo" src="images/footer-img/NEON-logo.png" alt="" />
-        <img class="logo2" src="images/footer-img/CJ_E&M-logo.png" alt="" />
+        <img class="logo" src="images/footer-img/NEON-logo.png" alt="logo1" />
+        <img
+          class="logo2"
+          src="images/footer-img/CJ_E&M-logo.png"
+          alt="logo2" />
         <img
           class="logo3"
           src="images/footer-img/BarunsOn_E&A-logo.png"

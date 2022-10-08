@@ -26,15 +26,19 @@ nav {
     position: fixed;
     width: 100%;
     max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
 }
 
+
+
 nav ul {
-    display: grid;
+    display: flex;
     list-style-type: none;
-    grid-auto-flow: column;
-    max-width: 1170px;
+    justify-content: center;
     margin: 0 auto;
-    height: 5.375em;
     align-items: center;
 }
 
@@ -48,13 +52,17 @@ nav a {
     font-family: 'Open Sans', sans-serif;
 }
 
-nav li:last-child {
-    justify-self: flex-end;
+
+
+ul.menu-items a {
+    margin: 0 5em 0 0;
 }
 
-nav li:last-child a {
-    margin-left: 1em;
+ul.some a {
+    margin: 0 0.5em;
 }
+
+/* Footer */
 
 footer {
     display: flex;
@@ -133,7 +141,6 @@ nav ul li a {
     overflow: hidden;
 }
 
-
 nav ul li a i {
     color: #888888;
 }
@@ -153,7 +160,21 @@ h2 {
 }
 
 
-/* Media Screen */
+
+/* Menu  */
+
+#burger {
+    display: none;
+    justify-content: start;
+    cursor: pointer;
+    color: #e5e5e5;
+    font-size: 1em;
+
+}
+
+
+
+/* Media Screen iPad */
 
 
 @media (max-width: 1024px) {
@@ -162,22 +183,93 @@ h2 {
         display: unset;
     }
 
-
     footer {
         background-color: transparent;
     }
 
 
-    /* .logo-img-on-top {
+    .menu-items {
         display: none;
-    } */
-
-
-    nav li:last-child {
-        margin-right: 1em;
     }
 
+
+    /* burger menu*/
+
+    /* burger-ikon til tablet og mobil */
+
+    #burger {
+        display: flex;
+        padding: 0.5em;
+        order: 2;
+    }
+
+    /* styling når burger har class active */
+    #burger.active {
+        padding-top: 4em;
+        font-size: 1.5em;
+    }
+
+    /* ændring af nav til tablet- og mobilvisning */
+    nav {
+        padding: 0 1em;
+        line-height: 2em;
+        flex-direction: row-reverse;
+    }
+
+    /* styling når nav har class active */
+    nav.active {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #486340;
+    }
+
+    /* menu med links til intern navigation */
+    .menu-items {
+        display: none;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .menu-items li {
+        margin: 1.5em 0;
+        justify-self: center;
+    }
+
+
+
+    ul.menu-items a {
+        margin: 0;
+    }
+
+    ul.some a {
+        margin: 0;
+    }
+
+
+
+    /* menu med links til sociale medier */
+    .some {
+        margin: 0;
+        justify-content: flex-end;
+        order: 1;
+        margin-top: 1em;
+    }
+
+    .some i {
+        margin: 0 0.6em;
+    }
+
+    nav.active ul li a {
+        font-size: 1.4em;
+    }
 }
+
+
 
 
 
@@ -221,6 +313,7 @@ h2 {
 
 
     /* Burger Menu */
+
 
 
 }
