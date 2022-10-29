@@ -15,3 +15,7 @@ XXX
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## Hosted on Netlify
+
+https://mido-movie-site.netlify.app
